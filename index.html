@@ -19,7 +19,7 @@
     </head>
 
     <body class="main_body">
-        
+
         <!-- pos header -->
         <header class="pos_header">
             <!-- container -->
@@ -90,9 +90,9 @@
         <div class="content_main py-4">
             <!-- container -->
             <div class="container-fluid">
-                <div class="row">
+                <div class="row flex-row-reverse">
                     <!-- cart column -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 col-xl-5">
                         <!-- cart box -->
                         <div class="cart__box">
                             <!-- card box header -->
@@ -151,15 +151,18 @@
                                                         Tateeghar Jamdani Sharee
                                                         <span><i class="fa fa-info-circle"></i></span>
                                                     </h4>
+                                                    <!-- product cart price -->
+                                                    <p class="product_cart_price"> <span class="product_price_amount">212500</span> ৳</p>
                                                 </td>
                                                 <td style="width: 30%;">
                                                     <!-- product quantity -->
                                                     <div class="input-group">
                                                         <!-- decress btn -->
-                                                        <button class="input-group-text rounded-0 text-danger add_btn" id="decress_quantity"><i class="fa-solid fa-minus"></i></button>
-                                                        <!-- search input -->
-                                                        <input class="form-control text-center" type="text" value="0">
-                                                        <button class="input-group-text rounded-0 text-info add_btn" id="incress_quantity"><i class="fa-solid fa-plus"></i></button>
+                                                        <button class="input-group-text rounded-0 text-danger add_btn decress_quantity"><i class="fa-solid fa-minus"></i></button>
+                                                        <!-- quantity input -->
+                                                        <input class="form-control text-center quantity_input" type="text" value="0">
+                                                        <!-- incress -->
+                                                        <button class="input-group-text rounded-0 text-info add_btn incress_quantity"><i class="fa-solid fa-plus"></i></button>
                                                     </div>
                                                     <!-- select type -->
                                                     <div class="input-group mt-2">
@@ -172,7 +175,7 @@
                                                 <td style="width:25%">
                                                     <!-- item subtotal -->
                                                     <p class="product_item_subtotal text-center">
-                                                        <span>2,125.00</span> ৳
+                                                        <span class="subtotal__amount">0</span> ৳
                                                     </p>
                                                 </td>
                                                 <td style="width: 10%;" class="text-center">
@@ -189,15 +192,18 @@
                                                         Tateeghar Jamdani Sharee
                                                         <span><i class="fa fa-info-circle"></i></span>
                                                     </h4>
+                                                    <!-- product cart price -->
+                                                    <p class="product_cart_price"> <span class="product_price_amount">210</span> ৳</p>
                                                 </td>
                                                 <td style="width: 30%;">
                                                     <!-- product quantity -->
                                                     <div class="input-group">
                                                         <!-- decress btn -->
-                                                        <button class="input-group-text rounded-0 text-danger add_btn" id="decress_quantity"><i class="fa-solid fa-minus"></i></button>
-                                                        <!-- search input -->
-                                                        <input class="form-control text-center" type="text" value="0">
-                                                        <button class="input-group-text rounded-0 text-info add_btn" id="incress_quantity"><i class="fa-solid fa-plus"></i></button>
+                                                        <button class="input-group-text rounded-0 text-danger add_btn decress_quantity"><i class="fa-solid fa-minus"></i></button>
+                                                        <!-- quantity input -->
+                                                        <input class="form-control text-center quantity_input" type="text" value="0">
+                                                        <!-- incress -->
+                                                        <button class="input-group-text rounded-0 text-info add_btn incress_quantity"><i class="fa-solid fa-plus"></i></button>
                                                     </div>
                                                     <!-- select type -->
                                                     <div class="input-group mt-2">
@@ -210,7 +216,48 @@
                                                 <td style="width:25%">
                                                     <!-- item subtotal -->
                                                     <p class="product_item_subtotal text-center">
-                                                        <span>2,125.00</span> ৳
+                                                        <span class="subtotal__amount">0</span> ৳
+                                                    </p>
+                                                </td>
+                                                <td style="width: 10%;" class="text-center">
+                                                    <button class="cart_actionBtn btn_main misty-color">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <!-- product item -->
+                                            <tr class="cart__product">
+                                                <td style="width: 35%;">
+                                                    <!-- product title -->
+                                                    <h4 class="cart__product_title">
+                                                        Tateeghar Jamdani Sharee
+                                                        <span><i class="fa fa-info-circle"></i></span>
+                                                    </h4>
+                                                    <!-- product cart price -->
+                                                    <p class="product_cart_price"> <span class="product_price_amount">500</span> ৳</p>
+                                                </td>
+                                                <td style="width: 30%;">
+                                                    <!-- product quantity -->
+                                                    <div class="input-group">
+                                                        <!-- decress btn -->
+                                                        <button class="input-group-text rounded-0 text-danger add_btn decress_quantity"><i class="fa-solid fa-minus"></i></button>
+                                                        <!-- quantity input -->
+                                                        <input class="form-control text-center quantity_input" type="text" value="0">
+                                                        <!-- incress -->
+                                                        <button class="input-group-text rounded-0 text-info add_btn incress_quantity"><i class="fa-solid fa-plus"></i></button>
+                                                    </div>
+                                                    <!-- select type -->
+                                                    <div class="input-group mt-2">
+                                                        <!-- select -->
+                                                        <select name="" id="" class="form-select rounded-0">
+                                                            <option value="">Pieces</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="width:25%">
+                                                    <!-- item subtotal -->
+                                                    <p class="product_item_subtotal text-center">
+                                                        <span class="subtotal__amount">0</span> ৳
                                                     </p>
                                                 </td>
                                                 <td style="width: 10%;" class="text-center">
@@ -228,32 +275,30 @@
                                         <tbody>
                                             <tr>
                                                 <td><b>Items:</b>
-                                                    <span class="total_quantity">6.00</span></td>
+                                                    <span id="total_quantity">0</span></td>
                                                 <td>
                                                     <b>Total:</b>
-                                                    <span class="price_total">20,437.50</span>
+                                                    <span id="price_total">00</span>
                                                 </td>
                                             </tr>
                                             <tr>
+                        
                                                 <td>
-                                                    <div class="d-flex gap-1">
-                                                        <strong>Discount(-):</strong>
-                                                        <span><i class="fas fa-edit"></i></span>                        
-                                                        <span id="total_discount">0.00</span>
-                                                    </div> 
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex gap-1">
+                                                    <div class="d-flex gap-1 flex-column">
                                                         <strong>Order Tax(+):</strong>
-                                                        <span><i class="fas fa-edit"></i></span>                        
-                                                        <span id="order_tax">0.00</span>
+                                                        <input type="number" id="order_tax" class=" vatInput form-control d-block">
                                                     </div> 
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex gap-1">
+                                                    <div class="d-flex flex-column gap-1">
+                                                        <strong>Discount(-):</strong>
+                                                        <input type="number" id="total_discount" class=" vatInput form-control d-block">
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex gap-1 flex-column">
                                                         <strong>Shipping(+):</strong>
-                                                        <span><i class="fas fa-edit"></i></span>                        
-                                                        <span id="shipping_charges_amount">0.00</span>
+                                                        <input type="number" id="shipping_charges" class=" vatInput form-control d-block">
                                                     </div> 
                                                 </td>
                                             </tr>
@@ -264,11 +309,164 @@
                         </div>
                     </div>
                     <!-- product column -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-6 col-xl-7">
                         <!-- pos product -->
                         <div class="pos__productcontent">
                             <!-- pos product -->
                             <div class="pos__product_wrapper">
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image1 (1).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image1 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image1 (3).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image1.png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image2 (1).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image2 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image2.png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image3 (1).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image3 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image3 (3).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image4 (1).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image4 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image4.png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image5 (1).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image1 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image5 (2).png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
+                                <!-- item -->
+                                <div class="product__box">
+                                    <!-- thumb -->
+                                    <div class="product_thumb">
+                                        <img src="assets/image/product/Image5.png" alt="">
+                                    </div>
+                                    <!-- title -->
+                                    <h4 class="product_title">Tateeghar Jamdani Sharee</h>
+                                </div>
                                 <!-- item -->
                                 <div class="product__box">
                                     <!-- thumb -->
@@ -434,54 +632,56 @@
         <footer class="pos_footer">
             <!-- container -->
             <div class="container-fluid">
-                <!-- pos footer button -->
-                <div class="pos_footer_btn d-flex align-items-center gap-2">
-                    <!-- draft btn -->
-                    <button class="btn_main bg-info footer_innerbtn">
-                        <span><i class="fa-solid fa-notes"></i></span>
-                        Draft
-                    </button>
-                    <!-- Quotation btn -->
-                    <button class="btn_main bg-purple footer_innerbtn">
-                        <span><i class="fa-solid fa-edit"></i></span>
-                        Quotation
-                    </button>
-                    <!-- suspend btn -->
-                    <button class="btn_main misty-color footer_innerbtn">
-                        <span><i class="fas fa-pause"></i></span>
-                        Suspend
-                    </button>
-                    <!-- Credit sale btn -->
-                    <button class="btn_main bg-yellow footer_innerbtn">
-                        <span><i class="fa-solid fa-check"></i></span>
-                        Credit Sale
-                    </button>
-                    <!-- card btn -->
-                    <button class="btn_main bg-navy footer_innerbtn">
-                        <span><i class="fa-solid fa-credit-card"></i></span>
-                        Card
-                    </button>
-                    <!-- multiple payment -->
-                    <button class="btn_main btn-success footer_innerbtn">
-                        <span><i class="fas fa-money-check-alt"></i></span>
-                        Multiple Payment
-                    </button>
-                    <!-- cash payment -->
-                    <button class="btn_main bg-primary footer_innerbtn">
-                        <span><i class="fas fa-money-check-alt"></i></span>
-                        Cash
-                    </button>
-                    <!-- total payable -->
-                    <div class="total_payable">
-                        <span>Total Payable:</span>
-                        <strong>38,937.50</strong>
+                <!-- wrapper -->
+                <div class="pos_footer_wrapper">
+                    <!-- pos footer button -->
+                    <div class="pos_footer_btn d-flex align-items-center gap-2">
+                        <!-- draft btn -->
+                        <button class="btn_main bg-info footer_innerbtn">
+                            <span><i class="fa-solid fa-notes"></i></span>
+                            Draft
+                        </button>
+                        <!-- Quotation btn -->
+                        <button class="btn_main bg-purple footer_innerbtn">
+                            <span><i class="fa-solid fa-edit"></i></span>
+                            Quotation
+                        </button>
+                        <!-- suspend btn -->
+                        <button class="btn_main misty-color footer_innerbtn">
+                            <span><i class="fas fa-pause"></i></span>
+                            Suspend
+                        </button>
+                        <!-- Credit sale btn -->
+                        <button class="btn_main bg-yellow footer_innerbtn">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            Credit Sale
+                        </button>
+                        <!-- card btn -->
+                        <button class="btn_main bg-navy footer_innerbtn">
+                            <span><i class="fa-solid fa-credit-card"></i></span>
+                            Card
+                        </button>
+                        <!-- multiple payment -->
+                        <button class="btn_main btn-success footer_innerbtn">
+                            <span><i class="fas fa-money-check-alt"></i></span>
+                            Multiple Payment
+                        </button>
+                        <!-- cash payment -->
+                        <button class="btn_main bg-primary footer_innerbtn">
+                            <span><i class="fas fa-money-check-alt"></i></span>
+                            Cash
+                        </button>
+                        <!-- total payable -->
+                        <div class="total_payable">
+                            <span>Total Payable:</span>
+                            <strong id="total_payment">000</strong>
+                        </div>
+                        <!-- cencel -->
+                        <button class="btn_main misty-color footer_innerbtn">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            Cencel
+                        </button>
                     </div>
-                    <!-- cencel -->
-                    <button class="btn_main misty-color footer_innerbtn">
-                        <span><i class="fa-solid fa-xmark"></i></span>
-                        Cencel
-                    </button>
-
                     <!-- recent transection -->
                     <button class="btn_main bg-navy footer_innerbtn">
                         <span><i class="fas fa-clock"></i></span>
@@ -491,6 +691,7 @@
             </div>
         </footer>
         <!-- pos footer end -->
+        
 
         <!-- jquery link -->
         <script src="assets/js/jquery.min.js"></script>

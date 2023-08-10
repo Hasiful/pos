@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_body{
+    background: #d2d6de;
+}
+
+:root{
+    --bg-color: #f5f5f5;
+    --text-color: #000000;
+    --global-color: #FFFFFF;
+    --border-color: #c3c3c3;
+    --transition: all linear 0.3s;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn_main{
+    border: none;
+    display: inline-block;
+    outline: none;
+}
+
+.input_control {
+    height: 100%;
+    width: 100%;
+    padding: 8px 15px;
+    color: var(--nav-color);
+    outline: none;
+    border: none;
+}
+
+.bg-info{
+    background: #00c0ef;
+    color: var(--global-color);
+}
+
+.bg-purple {
+    background-color: #605ca8;
+    color: var(--global-color);
+}
+
+.bg-yellow{
+    color: var(--global-color);
+    background-color: #ffad46;
+}
+
+.bg-primary{
+    color: var(--global-color);
+}
+
+.bg-navy {
+    background-color: #001f3f;
+    color: var(--global-color);
+}
+
+.btn-success {
+    background: #2dce89;
+    color: var(--global-color);
+}
+
+.misty-color{
+    background-color: #f5365c;
+    color: var(--global-color);
+}
+
+.opacity-color{
+    background-color: #605ca8;
+    color: var(--global-color);
+}
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(232, 234, 238);
+}
+
+  
+::-webkit-scrollbar-thumb {
+    background: #f5365c;
+}

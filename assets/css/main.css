@@ -1,0 +1,164 @@
+/* pos header */
+.pos_header {
+    padding: 9px 0px;
+    background: rgb(198 201 209);
+}
+
+.branch_location {
+    max-width: 320px;
+    width: 100%;
+}
+
+.branch_location_title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.get_date {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.branch_location select{
+    height: 30px;
+    padding: 0rem 2.25rem 0rem .75rem !important;
+}
+
+.header_btn {
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* product content */
+
+.pos__productcontent{
+    height: 600px;
+    overflow-y: auto;
+}
+
+.pos__product_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-right: 5px;
+}
+
+.product__box {
+    width: calc(25% - 12px);
+    background: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    padding-top: 5px;
+    border: 1px solid rgb(246 105 144 / 10%);
+}
+
+.product_thumb {
+    max-width: 120px;
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;   
+}
+
+.product_thumb img{
+    height: 100%;
+}
+
+.product_title {
+    padding: 3px 5px 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cart__box {
+    padding: 20px 24px;
+    background: var(--global-color);
+    border-radius: 4px;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    border: 1px solid rgb(246 105 144 / 10%);
+}
+
+.form-select:focus,
+.form-control:focus{
+    box-shadow: none;
+}
+
+.add_btn:hover {
+    background: rgb(0 0 0 / 10%);
+}
+
+.form-control,
+.form-select{
+    font-size: 14px;
+}
+
+.product__table{
+    min-height: 57vh;
+    max-height: 57vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.product__table table thead tr th,
+.product__table table tbody tr td{
+    border: 1px solid #f4f4f4;
+    vertical-align: middle;
+}
+
+.product__table table thead tr th{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.cart_actionBtn{
+    padding: 4px 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.cart_actionBtn i{
+    font-weight: 400;
+}
+
+.cart__product_title {
+    font-size: 12px;
+    color: #565656;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: rgb(141 141 141 / 5%) !important;
+}
+
+.product_cart_footer {
+    background: rgb(249 249 249);
+    padding: 10px;
+    border-top: 2px solid #f5365c;
+    border-radius: 4px;
+}
+
+.pos_footer {
+    padding: 15px 0px;
+    background: rgb(198 201 209);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+}
+
+.footer_innerbtn{
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.total_payable strong{
+    font-size: 18px;
+    color: #f5365c;
+}

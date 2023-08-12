@@ -177,3 +177,56 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.cardpayment_row,
+.cheque_payment_row,
+.bank_payment_row,
+.cutomer_payment_row{
+    display: none;
+}
+
+.cardpayment_row.show,
+.cheque_payment_row.show,
+.bank_payment_row.show,
+.cutomer_payment_row.show{
+    display: block;
+}
+
+.suspend_noteItem{
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.183);
+    text-align: center;
+}
+
+.suspend_note_content{}
+
+.suspend_note_title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.suspend_user_category {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.suspend_total_item,
+.suspend_total_amount,
+.suspend_userid{
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.suspend_note_footer{
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgb(203, 203, 203);
+}
+
+.suspend_date{}

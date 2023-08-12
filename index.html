@@ -51,13 +51,457 @@
                         <div class="header_btnwrapper">
                             <div class="d-flex align-items-stretch justify-content-end gap-2">
                                 <!-- add expense -->
-                                <button type="button" title="Add Expense" class="btn_main header_btn bg-purple" id="add_expense">
+                                <button type="button" title="Add Expense" class="btn_main header_btn bg-purple" data-bs-toggle="modal" data-bs-target="#add_expense">
                                     <span><i class="fa fas fa-minus-circle"></i> Add Expense</span>
                                 </button>
+                                <!-- add expence modal -->
+                                <div class="modal fade" id="add_expense">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- modal header -->
+                                            <div class="modal-header"> 
+                                                <h2 class="modal-title">Add Expense</h2>
+                                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!-- modal body -->
+                                            <div class="modal-body">
+                                                <!-- expenese -->
+                                                <div class="expense_row">
+                                                    <div class="row gy-3">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Business Location:</label>
+                                                                <!-- select location -->
+                                                                <select name="" id="" class="form-select rounded-0">
+                                                                    <option value="" hidden selected>Please Select</option>
+                                                                    <option value="">Tateeghar Branch</option>
+                                                                    <option value="">Tateeghar Branch</option>
+                                                                    <option value="">Tateeghar Branch</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Expense Category:</label>
+                                                                <!-- select category -->
+                                                                <select name="" id="" class="form-select rounded-0">
+                                                                    <option value="" hidden selected>Please Select</option>
+                                                                    <option value="">Hasiful Islam</option>
+                                                                    <option value="">Rashedul</option>
+                                                                    <option value="">Jeasmine Soap</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Reference No:</label>
+                                                                <!-- Reference no -->
+                                                                <input type="text" class="form-control rounded-0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Date:</label>
+                                                                <!-- date -->
+                                                                <input type="date" class="form-control rounded-0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Expense for:</label>
+                                                                <!-- Expense -->
+                                                                <select name="" id="" class="form-select rounded-0">
+                                                                    <option value="" hidden selected>Please Select</option>
+                                                                    <option value="">None</option>
+                                                                    <option value="">Sky Mart</option>
+                                                                    <option value="">Test</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Applicable Tax:</label>
+                                                                <!-- tax -->
+                                                                <select name="" id="" class="form-select rounded-0">
+                                                                    <option value="" hidden selected>Please Select</option>
+                                                                    <option value="">None</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Total amount:</label>
+                                                                <!-- total amount -->
+                                                                <input type="number" class="form-control rounded-0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Expense note:</label>
+                                                                <!-- note -->
+                                                                <textarea name="" id="" class="form-control rounded-0"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- payment -->
+                                                <div class="payment_row mt-4">
+                                                    <div class="row gy-3">
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Amount:</label>
+                                                            <div class="input-group">
+                                                                <button class="input-group-text rounded-0">
+                                                                    <i class="fa-solid fa-money-bill"></i>
+                                                                </button>
+                                                                <!-- amount -->
+                                                                <input type="number" class="form-control rounded-0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Paid on:</label>
+                                                                <input type="date" class="form-control rounded-0">
+                                                            </div>
+                                                        </div>
+                                                        <!-- payment method -->
+                                                        <div class="col-md-6">
+                                                            <label for="" class="form-label">Payment Method:</label>
+                                                            <select name="" id="paymentMethod" class="paymentMethod form-select rounded-0">
+                                                                <option value="" selected hidden>Select Payment</option>
+                                                                <option value="Cash">Cash</option>
+                                                                <option value="Card">Card</option>
+                                                                <option value="Cheque">Cheque</option>
+                                                                <option value="Bank Transfer">Bank Transfer</option>
+                                                                <option value="Other">Other</option>
+                                                                <option value="Customer Payment 1">Customer Payment 1</option>
+                                                                <option value="Customer Payment 2">Customer Payment 2</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- card payment row -->
+                                                        <div class="cardpayment_row">
+                                                            <div class="row gy-3">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Card Number:</label>
+                                                                        <!-- Reference no -->
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Card Number">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Card holder name:</label>
+                                                                        <!-- Reference no -->
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Card holder name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Card Transaction No:</label>
+                                                                        <!-- Reference no -->
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Card Transaction No">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Card Type:</label>
+                                                                        <!-- Reference no -->
+                                                                        <select name="" id="" class="form-select rounded-0">
+                                                                            <option value="" selected hidden>Select Card</option>
+                                                                            <option value="">Credit Card</option>
+                                                                            <option value="">Debit Card</option>
+                                                                            <option value="">Visa</option>
+                                                                            <option value="">Master Card</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Month</label>
+                                                                        <!-- Reference no -->
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Month">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- payment note -->
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Year:</label>
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Year">
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- payment note -->
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Security Code:</label>
+                                                                        <input type="text" class="form-control rounded-0" placeholder="Security Code">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- checque payment row -->
+                                                        <div class="cheque_payment_row">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Cheque No.</label>
+                                                                        <input type="text" class="form-control rounded-0">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- checque payment row -->
+                                                        <div class="bank_payment_row">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Bank Account No.</label>
+                                                                        <input type="text" class="form-control rounded-0">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- cutomer payment row -->
+                                                        <div class="cutomer_payment_row">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="" class="form-label">Transaction No.</label>
+                                                                        <input type="text" class="form-control rounded-0">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- payment note -->
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="" class="form-label">Payment note:</label>
+                                                                <textarea class="form-control rounded-0" rows="" id="" name="" cols="50"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- hr -->
+                                                <hr class="my-3">
+                                                <div class="expense_payment_content text-end">
+                                                    <strong>Payment due:</strong>
+                                                    <span id="expense_payment_due">0.00</span>
+                                                </div>
+                                            </div>
+                                            <!-- modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn_main footer_innerbtn misty-color">Save</button>
+                                                <button type="button" class="btn_main footer_innerbtn bg-navy" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- suspend button -->
-                                <button type="button" title="View Suspended Details" class="btn_main header_btn bg-yellow" id="suspend_btn">
+                                <button type="button" data-bs-target="#suspend_modal" data-bs-toggle="modal" title="View Suspended Details" class="btn_main header_btn bg-yellow">
                                     <span><i class="fa fa-pause-circle fa-lg"></i></span>
                                 </button>
+                                <!-- suspend modal -->
+                                <div class="modal fade" id="suspend_modal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- modal header -->
+                                            <div class="modal-header"> 
+                                                <h2 class="modal-title">Suspended Sales</h2>
+                                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!-- modal body -->
+                                            <div class="modal-body">
+                                                <div class="suspended_row">
+                                                    <div class="row gy-3">
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <!-- suspend item-->
+                                                            <div class="suspend_noteItem">
+                                                                <!-- content -->
+                                                                <div class="suspend_note_content">
+                                                                    <!-- title -->
+                                                                    <h4 class="suspend_note_title"> Not Sale This product</h4>
+                                                                    <!-- user category -->
+                                                                    <p class="suspend_user_category"> Walk-In Customer</p>
+                                                                    <p class="suspend_total_item">Total Items: <span>4</span></p>
+                                                                    <p class="suspend_total_amount">Total: <span>31055</span>৳</p>
+                                                                    <p class="suspend_userid">0066</p>
+                                                                </div>
+                                                                <!-- footer -->
+                                                                <div class="suspend_note_footer">
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <p class="suspend_date">12-08-2023</p>
+                                                                        <!-- action -->
+                                                                        <div class="suspend_note_action">
+                                                                            <button class="btn_main footer_innerbtn misty-color">
+                                                                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                                                            </button>
+                                                                            <button class="btn_main footer_innerbtn bg-navy">
+                                                                                <span><i class="fa-solid fa-trash"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn_main footer_innerbtn bg-navy" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!--  fullsecreen button -->
                                 <button type="button" title="Click Fullsecreen" class="btn_main header_btn bg-primary" id="fullsecreen_btn">
                                     <span><i class="fa-solid fa-expand"></i></span>
@@ -699,6 +1143,9 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
+
+        <script>
+        </script>
     </body>
 
 </html>

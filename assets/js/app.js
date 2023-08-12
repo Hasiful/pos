@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // incress decress
-  
 const selectElemnt = {
     plusQuan: document.getElementsByClassName("incress_quantity"),
     minusQuan: document.getElementsByClassName("decress_quantity"),
@@ -75,7 +74,6 @@ function subtotal(index, quantityInputArr){
 
     // total quantity
     totalQuantity()
-
     // total amopunt
     totalAmount()
 }
@@ -131,3 +129,24 @@ function vatAll() {
     let allTotalInCart = shipping + subTotalDis;
     totalPayment.innerText = allTotalInCart;
 }
+
+// card
+document.addEventListener("DOMContentLoaded", function() {
+    const paymentMethodSelect = document.getElementsByClassName("paymentMethod");
+    [...paymentMethodSelect].forEach((selectItem, index) =>{
+
+        const cardPaymentRow = document.getElementsByClassName("cardpayment_row")[index];
+        const chequePaymentRow = document.getElementsByClassName("cheque_payment_row")[index];
+        const bankPaymentRow = document.getElementsByClassName("bank_payment_row")[index];
+        const customerPaymentRow = document.getElementsByClassName("cutomer_payment_row")[index];
+            const paymentMethodSelect = document.getElementsByClassName("paymentMethod")[index]
+
+        selectItem.addEventListener("change", function(){
+            const selectedValue = paymentMethodSelect.value;
+            cardPaymentRow.classList.toggle("show", selectedValue === "Card");
+            chequePaymentRow.classList.toggle("show", selectedValue === "Cheque");
+            bankPaymentRow.classList.toggle("show", selectedValue === "Bank Transfer");
+            customerPaymentRow.classList.toggle("show", selectedValue.startsWith("Customer Payment"));
+        })
+    })
+});

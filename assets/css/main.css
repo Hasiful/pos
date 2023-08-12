@@ -192,14 +192,12 @@
     display: block;
 }
 
-.suspend_noteItem{
+.suspend_noteItem {
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.183);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .10);
     text-align: center;
 }
-
-.suspend_note_content{}
 
 .suspend_note_title {
     font-size: 16px;
@@ -229,4 +227,113 @@
     border-top: 1px solid rgb(203, 203, 203);
 }
 
-.suspend_date{}
+.register_modaltable tr:first-child{
+    background: #001f3f;
+}
+
+.register_modaltable tr:first-child th {
+    color: var(--global-color);
+}
+
+.register_modaltable tr th,
+.register_modaltable tr td {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.tableregsiter_sale tr:nth-child(2){
+    background: #001f3f;
+}
+
+.tableregsiter_sale tr:nth-child(2) :where(td, th){
+    color: var(--global-color);
+}
+
+.tableregsiter_sale tr:last-child{
+    background: #f5365c;
+}
+
+.tableregsiter_sale tr:last-child :where(td, th){
+    color: var(--global-color);
+}
+
+.register_soldtable_title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.register_ruleauth {
+    padding: 15px;
+    background: #001f3f;
+    color: var(--global-color);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.register_ruleauth ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.register_ruleauth_title{
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+.search_checked {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.check_inner {
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+
+.check_inner input {
+    appearance: none;
+}
+
+.search_checked span {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    color: var(--primaryColor);
+    border-radius: 3px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--border-color);
+}
+
+.check_inner input:checked ~ .checkmark {
+    background-color: #f5365c;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check_inner .checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.check_inner input:checked ~ .checkmark:after {
+    display: block;
+}

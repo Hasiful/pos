@@ -150,3 +150,20 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     })
 });
+
+// let show calculator
+
+let calculator = document.getElementById("calculator");
+let calculator_btn = document.getElementById("calculator_btn");
+
+calculator_btn.addEventListener("click", function() {
+    calculator.classList.toggle("showCal");
+});
+
+window.addEventListener("click", function(e) {
+    let eventTarget = e.target;
+
+    if (!eventTarget.closest("#calculator") && !eventTarget.closest("#calculator_btn")) {
+        calculator.classList.remove("showCal");
+    }
+});
